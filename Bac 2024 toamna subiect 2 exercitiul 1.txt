@@ -1,0 +1,67 @@
+a) 
+n = 412531
+x, y = -1
+x  = 31
+n = 41253
+x != -1
+y = 53
+n = 4125
+x != -1 
+y = 25
+n = 412
+x != -1 
+y = 12
+n = 41
+y = 41
+n = 4
+n = (4 * 100 + 31)*100+y = 431 * 100 + 41 = 43100 + 41 = 43141 raspuns
+
+b)
+1111
+111
+
+c)
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int x = -1, y = -1;
+while(n>9){
+  if(x == -1){
+	x = n %100;
+	} else {
+	y = n % 100;
+	}
+   n = n / 10;
+}
+if(x<y){
+   n = (n*100+x)*100+y;
+}else{
+   n = (n*100+y)*100+x;
+}
+ cout<<n;
+
+return 0;
+}
+
+
+d)
+citeste n(numar natural nenul)
+
+x <- -1; y <- -1
+
+daca n > 9 atunci
+    repeta
+     daca x = -1 atunci  x <- n % 100 
+     altfel y <- n % 100
+     n <- n /10
+    cat timp n>9
+
+daca x<y atunci n <- (n*100+x)*100 +y
+altfel n <- (n*100+y)*100 +x
+
+scrie n
+
+       
+
