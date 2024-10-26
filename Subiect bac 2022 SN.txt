@@ -1,0 +1,79 @@
+Subiect bac 2022 SN
+Sub 2 Ex 1
+a)
+
+m = 21, n = 47
+x = 1
+x = 21, y = 47, n = 46
+y = 26
+y = 5
+x = 16
+x = 11
+x = 6
+x = 1
+y = 4, 3, 2 , 1
+x = 21 y = 46, n = 45
+y = 25
+y = 4
+x = 17
+x = 13
+x = 9
+x = 5
+x = 1
+y = 4, 3, 2, 1
+x = 21, y = 45, n = 44
+y = 24
+y = 3
+x = 18, 15, 12, 9, 6, 3
+n+1 = 45
+
+b)
+
+m = 5, n = 10, 13
+
+
+c)
+#include <iostream>
+using namespace std;
+int main(){
+int m, n;
+cin>>m>>n;
+int x = 1;
+while(x==1){
+x = m;
+int y = n;
+n = n - 1;
+  while(x!=y){
+   if(x>y){
+     x = x-y;
+   } else {
+     y = y - x;
+   }	
+
+}
+}
+cout<<n+1;
+return 0;
+}
+
+
+
+d)
+citeste m,n (numere naturale)
+x<-1
+daca x=1 atunci
+  repeta
+	x<-m; y<-n; n<- n-1
+     cat timp x != y executa
+       daca x>y atunci x<-x-y
+        altfel x<-y-x
+  cat timp x=1
+scrie n+1
+
+
+
+
+
+
+
+

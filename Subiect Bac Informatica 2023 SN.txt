@@ -1,0 +1,87 @@
+Subiect Bac Informatica 2023 SN
+Sub2 Ex 1
+a)
+
+3, 746, 82, 3067, 67, 78, 178
+
+n = 3
+x = 0 
+Pas 1 while:
+a = 746
+b = 82
+c = a = 746
+p = 1
+a = 74; p = 10
+a = 7 ; p = 100 
+a = 782
+x = 1
+n = 2
+Pas 2 while
+a = 3067; b = 67; c = 3067; p = 1
+a = 306 ; p = 10
+a = 30 ; p = 100
+a = 3; p = 1000
+a = 3067
+a = c 
+n = 1
+Pas 3 while
+a = 78; b = 178
+c = a = 78
+p = 1
+a = 7; p = 10
+a = 248
+a != c; x = 2
+n = 0 
+x = 2 raspuns final
+
+b)
+1 0 2 0
+raspuns final
+
+c)
+#include <iostream>
+using namespace std;
+int main(){
+int n;
+cin >> n;
+int x = 0;
+while(n>0){
+int a, b;
+cin >> a >> b;
+int c = a;
+int p = 1;
+while(a>9){
+	a = a/10;
+	p = p*10;
+}
+a = a*p+b;
+if(a != c){
+x = x + 1;
+}
+n = n - 1;
+}
+cout << x;
+return 0;
+}
+
+
+d)
+citeste n(numar natural nenul)
+x <- 0
+pentru i = 1,n executa
+ citeste a,b(numere naturale)
+ c<-a; p<-1
+ cat timp a>9 executa
+	a<-[a/10]; p<-p*10
+ a<-a*p+b
+ daca a!=c atunci
+	x<-x+1
+  
+ scrie x
+
+
+
+
+
+
+
